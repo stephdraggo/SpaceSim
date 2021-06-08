@@ -7,7 +7,7 @@ namespace SpaceSim.Ship
     [RequireComponent(typeof(Rigidbody))]
     [RequireComponent(typeof(ShipPhysics))]
     [RequireComponent(typeof(ShipInput))]
-    public class Shippy : MonoBehaviour
+    public class ShipControl : MonoBehaviour
     {
         private ShipInput input;
         private ShipPhysics physics;
@@ -23,12 +23,6 @@ namespace SpaceSim.Ship
             if (!input.enabled) input.enabled = true;
             if (!physics.enabled) physics.enabled = true;
         }
-
-        void Start()
-        {
-
-        }
-
 
         void Update()
         {

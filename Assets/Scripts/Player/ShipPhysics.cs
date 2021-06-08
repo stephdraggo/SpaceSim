@@ -15,8 +15,7 @@ namespace SpaceSim.Ship
         [SerializeField, Tooltip("x: pitch, y: yaw, z:roll")]
         private Vector3 angularForce = new Vector3(100, 100, 100);
 
-        [SerializeField]
-        private float forceMultiplier = 100, angleMultiplier = 0.1f;
+        [SerializeField] private float forceMultiplier = 100, angleMultiplier = 0.1f;
 
         private Vector3 appliedLinearForce = Vector3.zero, appliedAngularForce = Vector3.zero;
 
@@ -28,31 +27,17 @@ namespace SpaceSim.Ship
 
         private void FixedUpdate()
         {
-            if (rBody != null) //just check that you didn't lose the rigidbody somehow
-            {
-                rBody.AddRelativeForce(appliedLinearForce * forceMultiplier, ForceMode.Force);
-                rBody.AddRelativeTorque(appliedAngularForce * angleMultiplier, ForceMode.Force);
-            }
-            else Debug.LogError($"{name} lost its rigidbody component somehow.", gameObject);
+            rBody.AddRelativeForce(appliedLinearForce * forceMultiplier, ForceMode.Force);
+            rBody.AddRelativeTorque(appliedAngularForce * angleMultiplier, ForceMode.Force);
         }
 
         /// <summary>
         /// Linear and angular input gets multiplied and applied here.
         /// </summary>
-        public void SetPhysicsInput(Vector3 _linearInput, Vector3 _angularInput)
+        public void SetPhysicsInput(Vector3 linearInput, Vector3 angularInput)
         {
-            appliedLinearForce = MultiplyVector3(_linearInput, linearForce);
-            appliedAngularForce = MultiplyVector3(_angularInput, angularForce);
-        }
-
-        void Start()
-        {
-
-        }
-
-        void Update()
-        {
-
+            appliedLinearForce = MultiplyVector3(linearInput, linearForce);
+            appliedAngularForce = MultiplyVector3(angularInput, angularForce);
         }
 
         public static Vector3 MultiplyVector3(Vector3 a, Vector3 b)
