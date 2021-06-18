@@ -12,6 +12,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/ShipParticles.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Asteroids Pack/Assets/Scripts/RandomRotator.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -72,7 +73,7 @@
       <updated>1622507364096</updated>
       <workItem from="1622507374924" duration="3771000" />
       <workItem from="1623115623148" duration="3520000" />
-      <workItem from="1623990728660" duration="4719000" />
+      <workItem from="1623990728660" duration="4994000" />
     </task>
     <servers />
   </component>

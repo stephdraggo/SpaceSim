@@ -43256,6 +43256,7 @@ GameObject:
   - component: {fileID: 6276063686255583139}
   - component: {fileID: 6276063686255583140}
   - component: {fileID: 6276063686255583141}
+  - component: {fileID: 215356289}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -43328,6 +43329,15 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6276063686255583142}
   m_Enabled: 1
+--- !u!45 &215356289
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6276063686255583142}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 2100000, guid: 860a66ca4259b384f9ec01b687f71c3c, type: 2}
 --- !u!1 &6276063686694551696
 GameObject:
   m_ObjectHideFlags: 0
@@ -43396,7 +43406,7 @@ MonoBehaviour:
   linearForce: {x: 100, y: 100, z: 100}
   angularForce: {x: 100, y: 100, z: 100}
   forceMultiplier: 100
-  angleMultiplier: 0.1
+  angleMultiplier: 10
 --- !u!114 &6276063686694551710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43461,6 +43471,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6276063687158307441}
+  - component: {fileID: 3310120907046580111}
   m_Layer: 0
   m_Name: Visual
   m_TagString: Untagged
@@ -43484,6 +43495,20 @@ Transform:
   m_Father: {fileID: 6276063686694551707}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &3310120907046580111
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6276063687158307442}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.5
+  m_Height: 6
+  m_Direction: 2
+  m_Center: {x: 0, y: 0.5, z: 1.5}
 --- !u!1 &7059583790547898634
 GameObject:
   m_ObjectHideFlags: 0
