@@ -10,14 +10,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/ShipParticles.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Scripts/Ship/Hittable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Pooling/ObjectPooling.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Mining/Asteroid.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/ShipControl.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/ShipPhysics.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/ShipInput.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/ShipControl.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/ShipParticles.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1tKAMcz7aZ9Rj2OZKWYYoT8taMH" />
@@ -68,6 +72,7 @@
       <updated>1622507364096</updated>
       <workItem from="1622507374924" duration="3771000" />
       <workItem from="1623115623148" duration="3520000" />
+      <workItem from="1623990728660" duration="4719000" />
     </task>
     <servers />
   </component>
