@@ -28830,6 +28830,36 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!1 &5052719247184549182
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6795650114761301158}
+  m_Layer: 0
+  m_Name: ShootPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6795650114761301158
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5052719247184549182}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6276063686694551707}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5353620148155784162
 GameObject:
   m_ObjectHideFlags: 0
@@ -43371,6 +43401,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6276063686255583139}
+  - {fileID: 6795650114761301158}
   - {fileID: 6276063687158307441}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -43426,6 +43457,7 @@ MonoBehaviour:
   throttle: 0
   throttleSpeed: 0.5
   rollSpeed: 5
+  shootPoint: {fileID: 6795650114761301158}
 --- !u!114 &6276063686694551711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43493,7 +43525,7 @@ Transform:
   - {fileID: 1325107660057879518}
   - {fileID: 6884864541858303900}
   m_Father: {fileID: 6276063686694551707}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &3310120907046580111
 CapsuleCollider:
