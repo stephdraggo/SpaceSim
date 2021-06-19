@@ -19,17 +19,15 @@ namespace SpaceSim.Ship
         private float throttleSpeed = 0.5f, rollSpeed = 5;
 
         [SerializeField]
-        private Transform shootPoint;
+        private float rayLength;
 
-        private Ray ray;
-        
+        private Hittable currentHit;
+
         void Update() {
             Move();
 
 
-            if (Input.GetKey(KeyCode.Mouse0)) {
-                RaycastClick();
-            }
+            RaycastClick();
         }
 
         #region move
@@ -98,27 +96,39 @@ namespace SpaceSim.Ship
 
         #region interact
 
-        //hecc
         private void RaycastClick() {
-            Vector3 from = shootPoint.position;
-            Vector3 to = from + shootPoint.forward * 10;
-            ray = new Ray(from, to);
-            if (Physics.Raycast(ray, out RaycastHit hit, 50)) {
-                if (hit.collider.TryGetComponent(out Hittable hittable)) {
-                    if (hittable is Asteroid) {
-                        //asteroid
-                        Debug.Log(hittable.name + " is an asteroid");
+            if (Input.GetKey(KeyCode.Mouse0)) {
+                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                RaycastHit hit;
+
+                if (Physics.Raycast(ray, out hit, rayLength)) {
+                    Debug.Log("hit something!");
+                    if (hit.collider.transform.parent.TryGetComponent(out Hittable hittable)) {
+                        Debug.Log("the thing is hittable");
+                        currentHit = hittable;
+                        currentHit.OnHit();
+                        if (hittable is Asteroid) {
+                            //asteroid
+                            Debug.Log(hittable.name + " is an asteroid");
+                        }
+                        else {
+                            //enemy
+                            Debug.Log(hittable.name + " is not an asteroid");
+                        }
                     }
-                    else {
-                        //enemy
-                    }
+                    else UnHit();
                 }
+                else UnHit();
             }
+            else UnHit();
         }
 
-        private void OnDrawGizmos() {
-            Gizmos.color = Color.yellow;
-            Gizmos.DrawLine(ray.origin,ray.direction);
+        private void UnHit() {
+            if (currentHit == null) return;
+
+            currentHit.OnLeave();
+
+            currentHit = null;
         }
 
         #endregion

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using SpaceSim.UI;
 using UnityEngine;
 
 namespace SpaceSim.Mining
@@ -11,14 +12,14 @@ namespace SpaceSim.Mining
 
         public ResourceType Resource => resource;
 
-        [SerializeField] private int resourceSize;
+        public int resourceSize;
 
         private float miningTime;
 
         private bool beingHit;
 
-        private void Awake()
-        {
+        private void Awake() {
+            beingHit = false;
             switch (Resource)
             {
                 case ResourceType.Copper:
@@ -40,8 +41,10 @@ namespace SpaceSim.Mining
 
         public override void OnHit()
         {
-            beingHit = true;
-            StartCoroutine(MiningCheck());
+            if (!beingHit) {
+                beingHit = true;
+                StartCoroutine(MiningCheck());
+            }
         }
 
         public override void OnLeave()
@@ -63,7 +66,7 @@ namespace SpaceSim.Mining
             float counter = miningTime;
             while (counter >= 0)
             {
-                counter += Time.deltaTime;
+                counter -= Time.deltaTime;
                 if (!beingHit) counter = 0;
                 yield return null;
             }
@@ -74,6 +77,8 @@ namespace SpaceSim.Mining
         private void Mine()
         {
             resourceSize--;
+
+            CanvasManager.Instance.UpdateResource(resource, 1);
 
             if (resourceSize <= 0) OnDeath();
         }

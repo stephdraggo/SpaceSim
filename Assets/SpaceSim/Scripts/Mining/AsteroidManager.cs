@@ -81,6 +81,8 @@ namespace SpaceSim.Mining
             AddOrbiter(newRock);
             
             newRock.transform.SetParent(transform);
+
+            newRock.resourceSize = Rand.Range(1, 10);
         }
 
         private void AddOrbiter(Asteroid rock) {

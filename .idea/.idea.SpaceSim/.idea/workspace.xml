@@ -13,6 +13,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/SpaceSim/Scripts/Light/Orbit.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/SpaceSim/Scripts/Light/LightBalls.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/SpaceSim/Scripts/UI/CanvasManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -29,9 +30,11 @@
       <option value="$PROJECT_DIR$/Assets/SpaceSim/Scripts/Light/LightBalls.cs" />
       <option value="$PROJECT_DIR$/Assets/SpaceSim/Scripts/Light/Orbit.cs" />
       <option value="$PROJECT_DIR$/Assets/SpaceSim/Scripts/Combat/ObjectPooling.cs" />
-      <option value="$PROJECT_DIR$/Assets/SpaceSim/Scripts/Mining/Asteroid.cs" />
       <option value="$PROJECT_DIR$/Assets/SpaceSim/Scripts/Mining/AsteroidManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/SpaceSim/Scripts/Player/CanvasManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/SpaceSim/Scripts/UI/CanvasManager.cs" />
       <option value="$PROJECT_DIR$/Assets/SpaceSim/Scripts/Player/ShipInput.cs" />
+      <option value="$PROJECT_DIR$/Assets/SpaceSim/Scripts/Mining/Asteroid.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1tKAMcz7aZ9Rj2OZKWYYoT8taMH" />
@@ -54,20 +57,20 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
-    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="5816">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="11032">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="5816" />
+      <option name="pid" value="11032" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="5816">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="5816" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -87,6 +90,7 @@
       <workItem from="1623115623148" duration="3520000" />
       <workItem from="1623990728660" duration="4995000" />
       <workItem from="1624073573710" duration="10532000" />
+      <workItem from="1624086747073" duration="2508000" />
     </task>
     <servers />
   </component>
