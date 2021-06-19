@@ -67,20 +67,24 @@ namespace SpaceSim.Mining
             while (counter >= 0)
             {
                 counter -= Time.deltaTime;
-                if (!beingHit) counter = 0;
+                if (!beingHit) counter = miningTime;
                 yield return null;
             }
 
-            if (beingHit) Mine();
+            if (beingHit) {
+                beingHit = false;
+                Mine();
+            }
         }
 
         private void Mine()
         {
             resourceSize--;
 
-            CanvasManager.Instance.UpdateResource(resource, 1);
+            CanvasManager.Instance.UpdateResource(Resource, 1);
 
             if (resourceSize <= 0) OnDeath();
+            else if(beingHit) OnHit();
         }
     }
 

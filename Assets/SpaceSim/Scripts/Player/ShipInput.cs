@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using SpaceSim.Mining;
+using SpaceSim.UI;
 using UnityEditor;
 using UnityEngine;
 
@@ -21,6 +22,9 @@ namespace SpaceSim.Ship
         [SerializeField]
         private float rayLength;
 
+        [SerializeField]
+        private LineRenderer renderLine;
+
         private Hittable currentHit;
 
         void Update() {
@@ -28,6 +32,8 @@ namespace SpaceSim.Ship
 
 
             RaycastClick();
+            
+            RaycastView();
         }
 
         #region move
@@ -99,10 +105,10 @@ namespace SpaceSim.Ship
         private void RaycastClick() {
             if (Input.GetKey(KeyCode.Mouse0)) {
                 Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-                RaycastHit hit;
 
-                if (Physics.Raycast(ray, out hit, rayLength)) {
-                    Debug.Log("hit something!");
+                if (Physics.Raycast(ray, out RaycastHit hit, rayLength)) {
+                    //RenderLine(renderLine.transform.position, hit.transform.position);
+
                     if (hit.collider.transform.parent.TryGetComponent(out Hittable hittable)) {
                         Debug.Log("the thing is hittable");
                         currentHit = hittable;
@@ -116,19 +122,55 @@ namespace SpaceSim.Ship
                             Debug.Log(hittable.name + " is not an asteroid");
                         }
                     }
-                    else UnHit();
+                    else NotHitting();
                 }
-                else UnHit();
+                else NotHitting();
             }
-            else UnHit();
+            else NotHitting();
         }
 
-        private void UnHit() {
+        private void NotHitting() {
             if (currentHit == null) return;
 
             currentHit.OnLeave();
 
             currentHit = null;
+        }
+
+        private void RenderLine(Vector3 posA, Vector3 posB) {
+            if (!renderLine.enabled) renderLine.enabled = true;
+            renderLine.SetPosition(0, posA);
+            renderLine.SetPosition(1, posB);
+        }
+
+        private void UnRenderLine() {
+            if (!renderLine.enabled) return;
+            renderLine.enabled = false;
+        }
+
+        #endregion
+
+        #region view
+
+        private void RaycastView() {
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+            if (Physics.Raycast(ray, out RaycastHit hit, rayLength)) {
+                RenderLine(renderLine.transform.position, hit.transform.position);
+
+                if (hit.collider.transform.parent.TryGetComponent(out Hittable hittable)) {
+                    Debug.Log("the thing is hittable");
+
+                    CanvasManager.Instance.UpdateView(hittable.Description);
+                }
+                else NotViewing();
+            }
+            else NotViewing();
+        }
+
+        private void NotViewing() {
+            UnRenderLine();
+            CanvasManager.Instance.UpdateView("");
         }
 
         #endregion

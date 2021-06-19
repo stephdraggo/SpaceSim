@@ -74,7 +74,7 @@ namespace SpaceSim.Mining
             //using ints helps to make the rocks spawn more spread out
             Vector3Int spawnPos = new Vector3Int(xBounds.RandomInt(), yBounds.RandomInt(), zBounds.RandomInt());
             spawnPos *= 10;
-            int index = Rand.Range(0, spawnableRocks.Length - 1);
+            int index = Rand.Range(0, spawnableRocks.Length);
 
             Asteroid newRock = asteroids.Spawn(spawnableRocks[index], spawnPos, Quaternion.identity);
             

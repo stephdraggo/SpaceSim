@@ -16,7 +16,7 @@ namespace SpaceSim.UI
 
         //-----------serialised-------------
         [SerializeField]
-        private TMP_Text copperDisplay, ironDisplay, diamondDisplay;
+        private TMP_Text copperDisplay, ironDisplay, diamondDisplay,viewText;
         
         //-----------private---------------
         private int copperCount, ironCount, diamondCount;
@@ -33,6 +33,9 @@ namespace SpaceSim.UI
             UpdateDisplay();
         }
 
+        public void UpdateView(string text) {
+            viewText.text = text;
+        }
 
         public void UpdateResource(ResourceType type, int difference) {
             switch (type) {

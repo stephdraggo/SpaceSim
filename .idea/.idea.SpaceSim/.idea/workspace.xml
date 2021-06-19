@@ -30,11 +30,12 @@
       <option value="$PROJECT_DIR$/Assets/SpaceSim/Scripts/Light/LightBalls.cs" />
       <option value="$PROJECT_DIR$/Assets/SpaceSim/Scripts/Light/Orbit.cs" />
       <option value="$PROJECT_DIR$/Assets/SpaceSim/Scripts/Combat/ObjectPooling.cs" />
-      <option value="$PROJECT_DIR$/Assets/SpaceSim/Scripts/Mining/AsteroidManager.cs" />
       <option value="$PROJECT_DIR$/Assets/SpaceSim/Scripts/Player/CanvasManager.cs" />
       <option value="$PROJECT_DIR$/Assets/SpaceSim/Scripts/UI/CanvasManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/SpaceSim/Scripts/Player/ShipInput.cs" />
       <option value="$PROJECT_DIR$/Assets/SpaceSim/Scripts/Mining/Asteroid.cs" />
+      <option value="$PROJECT_DIR$/Assets/SpaceSim/Scripts/Hittable.cs" />
+      <option value="$PROJECT_DIR$/Assets/SpaceSim/Scripts/Player/ShipInput.cs" />
+      <option value="$PROJECT_DIR$/Assets/SpaceSim/Scripts/Mining/AsteroidManager.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1tKAMcz7aZ9Rj2OZKWYYoT8taMH" />
@@ -90,7 +91,7 @@
       <workItem from="1623115623148" duration="3520000" />
       <workItem from="1623990728660" duration="4995000" />
       <workItem from="1624073573710" duration="10532000" />
-      <workItem from="1624086747073" duration="2508000" />
+      <workItem from="1624086747073" duration="7533000" />
     </task>
     <servers />
   </component>
