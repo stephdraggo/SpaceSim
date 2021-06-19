@@ -11,8 +11,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/ShipParticles.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Asteroids Pack/Assets/Scripts/RandomRotator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/SpaceSim/Scripts/Light/Orbit.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/SpaceSim/Scripts/Light/LightBalls.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -23,6 +23,14 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/ShipInput.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/ShipControl.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/ShipParticles.cs" />
+      <option value="$PROJECT_DIR$/Assets/Addons/BigBoi/Core/MinMaxFieldFloat.cs" />
+      <option value="$PROJECT_DIR$/Assets/SpaceSim/Scripts/Light/LightSpin.cs" />
+      <option value="$PROJECT_DIR$/Assets/SpaceSim/Scripts/Light/Light.cs" />
+      <option value="$PROJECT_DIR$/Assets/SpaceSim/Scripts/Light/LightBalls.cs" />
+      <option value="$PROJECT_DIR$/Assets/SpaceSim/Scripts/Light/Orbit.cs" />
+      <option value="$PROJECT_DIR$/Assets/SpaceSim/Scripts/Combat/ObjectPooling.cs" />
+      <option value="$PROJECT_DIR$/Assets/SpaceSim/Scripts/Mining/Asteroid.cs" />
+      <option value="$PROJECT_DIR$/Assets/SpaceSim/Scripts/Mining/AsteroidManager.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1tKAMcz7aZ9Rj2OZKWYYoT8taMH" />
@@ -39,6 +47,7 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -74,6 +83,7 @@
       <workItem from="1622507374924" duration="3771000" />
       <workItem from="1623115623148" duration="3520000" />
       <workItem from="1623990728660" duration="4995000" />
+      <workItem from="1624073573710" duration="7737000" />
     </task>
     <servers />
   </component>
