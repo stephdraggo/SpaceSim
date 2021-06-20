@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using SpaceSim.UI;
 using UnityEngine;
 
 namespace SpaceSim.Ship
@@ -28,6 +30,10 @@ namespace SpaceSim.Ship
         private void FixedUpdate() {
             rBody.AddRelativeForce(appliedLinearForce * forceMultiplier, ForceMode.Force);
             rBody.AddRelativeTorque(appliedAngularForce * angleMultiplier, ForceMode.Force);
+        }
+
+        private void OnTriggerEnter(Collider other) {
+            CanvasManager.Instance.ShowOptions();
         }
 
         /// <summary>

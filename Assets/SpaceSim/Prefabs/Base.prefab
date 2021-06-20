@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6843029433150294591}
   - component: {fileID: 8672872815858936908}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Landing Lights B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ GameObject:
   - component: {fileID: 1212144663648997849}
   - component: {fileID: 5592238820182437451}
   - component: {fileID: 2862349110248032439}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -199,7 +199,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6373654290702544447}
   - component: {fileID: 9140244755494897740}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Landing Lights R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -292,7 +292,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 391299167665677968}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -324,7 +324,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 391299168462630045}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Lights
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -369,7 +369,7 @@ GameObject:
   - component: {fileID: 391299168878339709}
   - component: {fileID: 391299168878339708}
   - component: {fileID: 391299168878339683}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -451,8 +451,8 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 391299168878339681}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
+  m_IsTrigger: 1
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -468,7 +468,7 @@ GameObject:
   - component: {fileID: 391299168883234871}
   - component: {fileID: 391299168883234870}
   - component: {fileID: 391299168883234869}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Side (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -563,7 +563,7 @@ GameObject:
   - component: {fileID: 391299169123089051}
   - component: {fileID: 391299169123089050}
   - component: {fileID: 391299169123089049}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Side (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -658,7 +658,7 @@ GameObject:
   - component: {fileID: 391299169394338459}
   - component: {fileID: 391299169394338458}
   - component: {fileID: 391299169394338457}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Side (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -753,7 +753,7 @@ GameObject:
   - component: {fileID: 391299169424846678}
   - component: {fileID: 391299169424846677}
   - component: {fileID: 391299169424846676}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Side (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -848,7 +848,7 @@ GameObject:
   - component: {fileID: 1451874842564743576}
   - component: {fileID: 5291695270543060490}
   - component: {fileID: 2543799339708811510}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -943,7 +943,7 @@ GameObject:
   - component: {fileID: 1475891122205131872}
   - component: {fileID: 5274440369801542642}
   - component: {fileID: 2526545059766263054}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1036,7 +1036,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6510960687109712992}
   - component: {fileID: 9002973680840182291}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Landing Lights W
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1130,7 +1130,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6581468333751357754}
   - component: {fileID: 9078547076050450249}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Landing Lights R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1226,7 +1226,7 @@ GameObject:
   - component: {fileID: 2260674816235861487}
   - component: {fileID: 4762133780562987645}
   - component: {fileID: 2897217240887372929}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1321,7 +1321,7 @@ GameObject:
   - component: {fileID: 99275178432187883}
   - component: {fileID: 6640921084051223161}
   - component: {fileID: 3894433078124516485}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1414,7 +1414,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9082035834600579853}
   - component: {fileID: 6386869095557678462}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Landing Lights W
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1510,7 +1510,7 @@ GameObject:
   - component: {fileID: 4179421997734807512}
   - component: {fileID: 7442676242565789770}
   - component: {fileID: 966926289526955702}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1605,7 +1605,7 @@ GameObject:
   - component: {fileID: 4255282082011527810}
   - component: {fileID: 7369072304607790352}
   - component: {fileID: 893596179356705772}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1698,7 +1698,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8443461614835077762}
   - component: {fileID: 6018598527544505585}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Landing Lights B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1792,7 +1792,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8462334925850363770}
   - component: {fileID: 6042467463968317705}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Landing Lights W
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1888,7 +1888,7 @@ GameObject:
   - component: {fileID: 4117869453892171997}
   - component: {fileID: 7236269505722976079}
   - component: {fileID: 1031007710633451955}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1981,7 +1981,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8179732761351522107}
   - component: {fileID: 6282336181349065032}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Landing Lights G
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2077,7 +2077,7 @@ GameObject:
   - component: {fileID: 4584958810449501405}
   - component: {fileID: 7127213639749296975}
   - component: {fileID: 633450370440463795}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2170,7 +2170,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6932986521282829065}
   - component: {fileID: 5088366508409421178}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Landing Lights R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2266,7 +2266,7 @@ GameObject:
   - component: {fileID: 5801203811861322798}
   - component: {fileID: 994165858547950524}
   - component: {fileID: 7487648204728599872}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2361,7 +2361,7 @@ GameObject:
   - component: {fileID: 6364472233664927247}
   - component: {fileID: 367849807376542109}
   - component: {fileID: 8014254188550492001}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2456,7 +2456,7 @@ GameObject:
   - component: {fileID: 6739166989205354690}
   - component: {fileID: 58454565240899408}
   - component: {fileID: 7704859429703639468}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2549,7 +2549,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4382015727289970208}
   - component: {fileID: 1908229871429322835}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Landing Lights G
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2643,7 +2643,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4108828203063951597}
   - component: {fileID: 2282785805105981086}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Landing Lights G
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2737,7 +2737,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3590596632224615116}
   - component: {fileID: 1693129707235110079}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Landing Lights B
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -17,6 +17,8 @@ namespace SpaceSim.UI
         //-----------serialised-------------
         [SerializeField]
         private TMP_Text copperDisplay, ironDisplay, diamondDisplay,viewText;
+        [SerializeField]
+        private GameObject optionsPanel;
         
         //-----------private---------------
         private int copperCount, ironCount, diamondCount;
@@ -31,6 +33,10 @@ namespace SpaceSim.UI
         void Start() {
             
             UpdateDisplay();
+        }
+
+        public void ShowOptions() {
+            optionsPanel.SetActive(true);
         }
 
         public void UpdateView(string text) {
