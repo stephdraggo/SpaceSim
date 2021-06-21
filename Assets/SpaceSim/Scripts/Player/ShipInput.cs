@@ -10,6 +10,7 @@ namespace SpaceSim.Ship
 {
     public class ShipInput : MonoBehaviour
     {
+        public static bool CanMove = true;
         [Range(-1, 1)]
         public float pitch, yaw, roll, strafe;
 
@@ -28,12 +29,14 @@ namespace SpaceSim.Ship
         private Hittable currentHit;
 
         void Update() {
-            Move();
+            if (CanMove) {
+                Move();
 
 
-            RaycastClick();
-            
-            RaycastView();
+                RaycastClick();
+
+                RaycastView();
+            }
         }
 
         #region move

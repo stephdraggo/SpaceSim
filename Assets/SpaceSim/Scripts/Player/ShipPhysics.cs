@@ -28,8 +28,10 @@ namespace SpaceSim.Ship
         }
 
         private void FixedUpdate() {
-            rBody.AddRelativeForce(appliedLinearForce * forceMultiplier, ForceMode.Force);
-            rBody.AddRelativeTorque(appliedAngularForce * angleMultiplier, ForceMode.Force);
+            if (ShipInput.CanMove) {
+                rBody.AddRelativeForce(appliedLinearForce * forceMultiplier, ForceMode.Force);
+                rBody.AddRelativeTorque(appliedAngularForce * angleMultiplier, ForceMode.Force);
+            }
         }
 
         private void OnTriggerEnter(Collider other) {

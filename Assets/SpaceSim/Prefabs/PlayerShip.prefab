@@ -43440,7 +43440,7 @@ Camera:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
+  m_TargetTexture: {fileID: 8400000, guid: 2e508ffe6384f4e4e8ff4d99f763a41d, type: 2}
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
@@ -43556,7 +43556,7 @@ MonoBehaviour:
   throttle: 0
   throttleSpeed: 0.5
   rollSpeed: 5
-  rayLength: 0
+  rayLength: 50
   renderLine: {fileID: 1727937317139296604}
 --- !u!114 &6276063686694551711
 MonoBehaviour:

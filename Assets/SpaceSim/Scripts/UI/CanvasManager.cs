@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using SpaceSim.Mining;
+using SpaceSim.Ship;
 using TMPro;
 using UnityEngine;
 
@@ -31,12 +32,18 @@ namespace SpaceSim.UI
 
         // Start is called before the first frame update
         void Start() {
-            
+            HideOptions();
             UpdateDisplay();
         }
 
         public void ShowOptions() {
+            ShipInput.CanMove = false;
             optionsPanel.SetActive(true);
+        }
+
+        public void HideOptions() {
+            ShipInput.CanMove = true;
+            optionsPanel.SetActive(false);
         }
 
         public void UpdateView(string text) {
