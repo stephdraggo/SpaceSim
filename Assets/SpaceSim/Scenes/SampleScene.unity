@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 880330731}
   - component: {fileID: 880330730}
+  - component: {fileID: 880330732}
   m_Layer: 0
   m_Name: AsteroidManager
   m_TagString: Untagged
@@ -190,6 +191,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &880330732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 880330729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9371c3d0865bd0841915883d8c805b4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clearLogsOnStart: 0
 --- !u!20 &2091873583 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 6276063686255583140, guid: c361146b3df388a4186fb54523b9278f, type: 3}
