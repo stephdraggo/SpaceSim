@@ -16,6 +16,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/SpaceSim/Scripts/Light/LightBalls.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/SpaceSim/Scripts/UI/CanvasManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/SpaceSim/Scripts/UI/Options/AntiAliasing.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Desktop/RCVersionControl/RCParticleSim/Assets/RC-ParticleSim/Code/Data/JsonHandler.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -44,6 +45,8 @@
       <option value="$PROJECT_DIR$/Assets/SpaceSim/Scripts/UI/Options/AntiAliasing.cs" />
       <option value="$PROJECT_DIR$/Assets/SpaceSim/Scripts/Player/ShipControl.cs" />
       <option value="$PROJECT_DIR$/Assets/SpaceSim/Scripts/Player/ShipPhysics.cs" />
+      <option value="$PROJECT_DIR$/Assets/SpaceSim/Scripts/Saving/JsonHandler.cs" />
+      <option value="$PROJECT_DIR$/Assets/SpaceSim/Scripts/Saving/PrintLogs.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1tKAMcz7aZ9Rj2OZKWYYoT8taMH" />
@@ -102,6 +105,7 @@
       <workItem from="1624086747073" duration="7533000" />
       <workItem from="1624230674994" duration="215000" />
       <workItem from="1624236911244" duration="5160000" />
+      <workItem from="1624334335040" duration="2754000" />
     </task>
     <servers />
   </component>
