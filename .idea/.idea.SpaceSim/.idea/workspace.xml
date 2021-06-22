@@ -34,19 +34,19 @@
       <option value="$PROJECT_DIR$/Assets/SpaceSim/Scripts/Light/Orbit.cs" />
       <option value="$PROJECT_DIR$/Assets/SpaceSim/Scripts/Combat/ObjectPooling.cs" />
       <option value="$PROJECT_DIR$/Assets/SpaceSim/Scripts/Player/CanvasManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/SpaceSim/Scripts/Mining/Asteroid.cs" />
       <option value="$PROJECT_DIR$/Assets/SpaceSim/Scripts/Hittable.cs" />
       <option value="$PROJECT_DIR$/Assets/SpaceSim/Scripts/Mining/AsteroidManager.cs" />
       <option value="$PROJECT_DIR$/Assets/SpaceSim/Scripts/Player/ShipInput.cs" />
       <option value="$PROJECT_DIR$/Assets/SpaceSim/Scripts/UI/Options/ChangeRenderRate.cs" />
       <option value="$PROJECT_DIR$/Assets/SpaceSim/Scripts/UI/Options/ChangeRenderTexture.cs" />
       <option value="$PROJECT_DIR$/Assets/SpaceSim/Scripts/UI/Options/Anti-Aliasing.cs" />
-      <option value="$PROJECT_DIR$/Assets/SpaceSim/Scripts/UI/CanvasManager.cs" />
       <option value="$PROJECT_DIR$/Assets/SpaceSim/Scripts/UI/Options/AntiAliasing.cs" />
-      <option value="$PROJECT_DIR$/Assets/SpaceSim/Scripts/Player/ShipControl.cs" />
       <option value="$PROJECT_DIR$/Assets/SpaceSim/Scripts/Player/ShipPhysics.cs" />
       <option value="$PROJECT_DIR$/Assets/SpaceSim/Scripts/Saving/JsonHandler.cs" />
       <option value="$PROJECT_DIR$/Assets/SpaceSim/Scripts/Saving/PrintLogs.cs" />
+      <option value="$PROJECT_DIR$/Assets/SpaceSim/Scripts/Mining/Asteroid.cs" />
+      <option value="$PROJECT_DIR$/Assets/SpaceSim/Scripts/UI/CanvasManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/SpaceSim/Scripts/Player/ShipControl.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1tKAMcz7aZ9Rj2OZKWYYoT8taMH" />
@@ -105,7 +105,7 @@
       <workItem from="1624086747073" duration="7533000" />
       <workItem from="1624230674994" duration="215000" />
       <workItem from="1624236911244" duration="5160000" />
-      <workItem from="1624334335040" duration="2754000" />
+      <workItem from="1624334335040" duration="3140000" />
     </task>
     <servers />
   </component>

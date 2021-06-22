@@ -20,9 +20,17 @@ namespace SpaceSim.Ship
             physics = GetComponent<ShipPhysics>();
             particles = GetComponent<ShipParticles>();
 
-            if (input == null || physics == null || particles == null) Debug.LogError($"{name} is missing ship parts.");
-            if (!input.enabled) input.enabled = true;
-            if (!physics.enabled) physics.enabled = true;
+
+            try {
+                input.enabled = true;
+                physics.enabled = true;
+            }
+            catch {
+                Debug.LogError($"{name} is missing input and/or physics.");
+            }
+
+            if (particles == null)
+                Debug.LogError($"{name} is missing particle effects.");
         }
 
         void Update() {

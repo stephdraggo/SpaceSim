@@ -8,19 +8,19 @@ using UnityEngine;
 
 namespace SpaceSim.UI
 {
-
     public class CanvasManager : MonoBehaviour
     {
         #region Variables
+
         //-----------static----------------
         public static CanvasManager Instance;
 
         //-----------serialised-------------
         [SerializeField]
-        private TMP_Text copperDisplay, ironDisplay, diamondDisplay,viewText;
+        private TMP_Text copperDisplay, ironDisplay, diamondDisplay, viewText;
         [SerializeField]
         private GameObject optionsPanel;
-        
+
         //-----------private---------------
         private int copperCount, ironCount, diamondCount;
 
@@ -36,14 +36,13 @@ namespace SpaceSim.UI
             UpdateDisplay();
         }
 
-        public void ShowOptions() {
-            ShipInput.CanMove = false;
-            optionsPanel.SetActive(true);
+        public void ShowOptions(bool yes = true) {
+            ShipInput.CanMove = !yes;
+            optionsPanel.SetActive(yes);
         }
 
         public void HideOptions() {
-            ShipInput.CanMove = true;
-            optionsPanel.SetActive(false);
+            ShowOptions(false);
         }
 
         public void UpdateView(string text) {

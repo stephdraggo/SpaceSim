@@ -54,7 +54,7 @@ namespace SpaceSim.Mining
 
         public override void OnDeath()
         {
-            //play explosion particles
+            //play explosion particles?
             
             AsteroidManager.Instance.OnRockDeath(this);
             
